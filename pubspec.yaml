@@ -1,0 +1,29 @@
+name: goods_scanner
+description: Scan goods barcodes and photos to determine country origin using AI.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  mobile_scanner: ^7.4.0
+  camera: ^0.10.5
+  image_picker: ^1.0.4
+  http: ^1.1.0
+  google_generative_ai: ^0.4.7
+  flutter_dotenv: ^5.1.0
+  percent_indicator: ^4.2.3
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - .env

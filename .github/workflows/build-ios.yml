@@ -18,6 +18,9 @@ jobs:
 
       - run: flutter pub get
 
+      - name: Create .env for CI
+        run: echo "GEMINI_API_KEY=placeholder" > .env
+
       - name: Install CocoaPods dependencies
         run: cd ios && pod install
 
